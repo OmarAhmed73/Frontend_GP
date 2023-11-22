@@ -31,3 +31,78 @@
 .lessonCard .mainCardStudent:hover .btn-primary{
     display: inline-block;
 }
+
+ @media screen and (max-width: 600px) {
+
+     .cardTitleStudent,
+     .cardText {
+         font-size: small;
+     }
+
+     .btn-primary {
+         font-size: smaller;
+         padding: 1px;
+         justify-content: center;
+     }
+
+     .summarize {
+         margin-left: 0;
+     }
+ }
+
+ @media screen and (min-width: 601px) and (max-width: 800px) {
+
+     .cardTitleStudent,
+     .cardText {
+         font-size: medium;
+     }
+
+     .cardText {
+         margin-bottom: 8px;
+     }
+
+     .btn-primary {
+         font-size: medium;
+         padding: 2px;
+         justify-content: center;
+         margin-top: 0;
+     }
+
+     .summarize {
+         margin-left: 0;
+     }
+ }
+
+ @media screen and (min-width: 801px) and (max-width: 1024px) {
+
+     .cardTitleStudent,
+     .cardText {
+         font-size: large;
+     }
+
+     .cardText {
+         margin-bottom: 8px;
+     }
+
+     .btn-primary {
+         font-size: large;
+         padding: 4px;
+         justify-content: center;
+         margin-top: 0;
+     }
+
+     .summarize {
+         margin-left: 0;
+     }
+ }
+
+ @media screen and (min-width: 1025px) and (max-width: 1285.60px) {
+     .cardText {
+         margin-bottom: 4px;
+     }
+
+     .showLesson,
+     .summarize {
+         padding: 4px;
+     }
+ }
