@@ -1,0 +1,30 @@
+.lessonTitle{
+    color: white;
+    justify-content: center;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px auto;
+    padding: auto;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.summarizeText{
+    padding: 14px;
+    margin: 3px;
+}
+
+#summarizeText{
+    border-radius: 15px;
+    border: solid white;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    resize: none;
+}
+
+.downButton{
+    margin-bottom: 15px;
+}

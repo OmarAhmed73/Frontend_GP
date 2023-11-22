@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3551b5;
+    height: 100%;
+    min-height: 100%;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin-bottom: 55px;
+}
+
+.contactForm{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    top: 21%;
+    left: 19.5%;
+    transform: translate(-50%, -50%);
+    height: 55%;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;  
+}
+
+input:focus, textarea:focus{
+    border-color: #3551b5;
+}
+
+.input-group label{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+.send-button{
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+ .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .row .input-group{
+    width: 48%;
+} 
+
+.row .input-group label{
+    position: absolute;
+    left: 11px;
+}

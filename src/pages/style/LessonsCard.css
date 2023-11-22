@@ -1,0 +1,33 @@
+.card-image {
+    height: 300px;
+}
+
+.mainCardStudent{
+    transition: 0.4s;
+    height: 350px;
+}
+
+.cardBodyStudent{
+    height: fit-content;
+}
+
+.mainCardTeacher{
+    transition: 0.4s;
+}
+
+.lessonCard .mainCardStudent:hover,
+.lessonCard .mainCardTeacher:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.75rem 1.5rem #292828;
+    height: 500px;
+}
+
+.cardText,
+.btn-primary{
+    display: none;
+}
+
+.lessonCard .mainCardStudent:hover .cardText,
+.lessonCard .mainCardStudent:hover .btn-primary{
+    display: inline-block;
+}
