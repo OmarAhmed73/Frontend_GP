@@ -21,7 +21,7 @@ const Contact = () => {
             <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
           </div>
           <div className='input-group'>
-            <textarea id="message" required rows="8"></textarea>
+            <textarea id="message" required rows="10"></textarea>
             <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
           </div>
           <button type="submit" className="send-button">Send <i class="fa-solid fa-paper-plane"></i></button>

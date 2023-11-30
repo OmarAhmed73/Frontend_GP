@@ -21,8 +21,8 @@ const LessonCardStudent = () => {
           <Card.Text className="cardText">Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button className="btn btn-primary me-2 mb-2" size="lg" onClick={openPdf}>Show Lesson</Button> 
-          <Button className="btn btn-primary me-2 mb-2" size="lg" href="/Summarization">Summarize</Button>
+          <Button className="btn btn-primary me-2 mb-2 showLesson" size="lg" onClick={openPdf}>Show Lesson</Button> 
+          <Button className="btn btn-primary me-2 mb-2 summarize" size="lg" href="/Summarization">Summarize</Button>
         </Card.Body>
       </Card>
       </div>

@@ -32,77 +32,74 @@
     display: inline-block;
 }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px){
+    .cardTitleStudent, 
+    .cardText{
+        font-size: small;
+    }
 
-     .cardTitleStudent,
-     .cardText {
-         font-size: small;
-     }
+    .btn-primary{
+        font-size: smaller;
+        padding: 1px;
+        justify-content: center;
+    }
 
-     .btn-primary {
-         font-size: smaller;
-         padding: 1px;
-         justify-content: center;
-     }
+    .summarize{
+        margin-left: 0;
+    }
+}
 
-     .summarize {
-         margin-left: 0;
-     }
- }
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .cardTitleStudent,
+    .cardText {
+            font-size: medium;
+        }
 
- @media screen and (min-width: 601px) and (max-width: 800px) {
+        .cardText{
+            margin-bottom: 8px;
+        }
 
-     .cardTitleStudent,
-     .cardText {
-         font-size: medium;
-     }
+    .btn-primary{
+                    font-size: medium;
+                    padding: 2px;
+                    justify-content: center;
+                    margin-top: 0;
+                }
 
-     .cardText {
-         margin-bottom: 8px;
-     }
+    .summarize {
+        margin-left: 0;
+             }
+}
 
-     .btn-primary {
-         font-size: medium;
-         padding: 2px;
-         justify-content: center;
-         margin-top: 0;
-     }
+@media screen and (min-width: 801px) and (max-width: 1024px){
+    .cardTitleStudent,
+        .cardText {
+            font-size: large;
+        }
 
-     .summarize {
-         margin-left: 0;
-     }
- }
+                .cardText {
+                    margin-bottom: 8px;
+                }
 
- @media screen and (min-width: 801px) and (max-width: 1024px) {
+                                .btn-primary {
+                                    font-size: large;
+                                    padding: 4px;
+                                    justify-content: center;
+                                    margin-top: 0;
+                                }
+                
+                                .summarize {
+                                    margin-left: 0;
+                                }
+}
 
-     .cardTitleStudent,
-     .cardText {
-         font-size: large;
-     }
+@media screen and (min-width: 1025px) and (max-width: 1285.60px) {
+    .cardText{
+        margin-bottom: 4px;
+    }
 
-     .cardText {
-         margin-bottom: 8px;
-     }
-
-     .btn-primary {
-         font-size: large;
-         padding: 4px;
-         justify-content: center;
-         margin-top: 0;
-     }
-
-     .summarize {
-         margin-left: 0;
-     }
- }
-
- @media screen and (min-width: 1025px) and (max-width: 1285.60px) {
-     .cardText {
-         margin-bottom: 4px;
-     }
-
-     .showLesson,
-     .summarize {
-         padding: 4px;
-     }
- }
+    .showLesson,
+    .summarize{
+        padding: 4px;
+    }
+}
