@@ -1,11 +1,17 @@
 import React, { useState} from 'react'
 import image from '../assets/logo2.png'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import '../pages/style/Header.css'
-
+import { removeAuthUser, getAuthUser } from '../helper/Storage'
 
 const Header = () => {
-
+  const navigate = useNavigate()
+  const auth = getAuthUser();
+  console.log(auth)
+  const LogOut = () => {
+    removeAuthUser();
+    navigate("/")
+  }
 
   return (
     // <nav>
@@ -61,8 +67,21 @@ const Header = () => {
         <li className='list-item-nav'><a className='link-list-item-nav' href='/report'>Report</a></li>
         <li className='list-item-nav'><a className='link-list-item-nav' href='/account'>Account</a></li>
         <li className='list-item-nav'><a className='link-list-item-nav' href='/contact'>Contact</a></li>
-        <li className='list-item-nav'><a className='link-list-item-nav' href='/login'>Login</a></li>
-        <li className='list-item-nav'><button type="button" class="btn btn-outline-danger">Log Out</button></li>
+          <li className='list-item-nav'>
+           {/*unAuthenticated Routes*/} 
+          
+          {!auth && (
+            <>
+              <a className='link-list-item-nav' href='/login'>Login</a>
+            </>
+)}  
+           </li>
+          
+    {/*Authenticated Routes*/} 
+
+          <li className='list-item-nav'>
+            {auth && <button type="button" class="btn btn-outline-danger" onClick={LogOut}>Log Out</button>}
+          </li>
       </ul>
     </nav>
     </div>

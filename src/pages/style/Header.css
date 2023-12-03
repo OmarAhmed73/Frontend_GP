@@ -213,6 +213,7 @@ nav ul.open{
         left: -100%;
         text-align: center;
         transition: all 0.5s;
+        z-index: 1000;
     }
 
     .list-item-nav{

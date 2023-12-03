@@ -15,11 +15,16 @@
     transition: 0.4s;
 }
 
-.lessonCard .mainCardStudent:hover,
-.lessonCard .mainCardTeacher:hover{
+.lessonCard .mainCardStudent:hover{
     transform: translateY(-0.5rem);
     box-shadow: 0.5rem 0.75rem 1.5rem #292828;
     height: 500px;
+}
+
+.lessonCard .mainCardTeacher:hover{
+    transform: translateY(-0.5rem);
+        box-shadow: 0.5rem 0.75rem 1.5rem #292828;
+        height: 540px;
 }
 
 .cardText,

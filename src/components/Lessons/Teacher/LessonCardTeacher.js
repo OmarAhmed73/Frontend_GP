@@ -16,7 +16,8 @@ const LessonCardTeacher = () => {
             bulk of the card's content.
           </Card.Text>
           <Button className="btn mb-1" style={{color:"white"}} size="lg" variant="info" href="/5">Update</Button> 
-          <Button className="btn ms-2 mb-1" variant="danger" size="lg" href="/">Delete</Button>
+            <Button className="btn ms-2 mb-1" variant="danger" size="lg" href="/">Delete</Button>
+            <Button  variant="success" >Generate Quiz</Button>
         </Card.Body>
       </Card>
       </div>

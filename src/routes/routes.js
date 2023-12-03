@@ -7,7 +7,10 @@ import Contact from "../pages/contact/Contact";
 import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
 import ShowLessons from "../components/Lessons/ShowLessons";
 import Summarization from "../pages/Summarization/Summarization";
-
+import Account from "../pages/Account/Account";
+import ShowQuizPage from "../components/Quizzes/ShowQuizPage"
+import Questions from "../pages/Questions/Questions";
+import ShowReport from "../pages/Reports/ShowReport";
 
 
 export const routes = createBrowserRouter([
@@ -39,6 +42,22 @@ export const routes = createBrowserRouter([
         {
             path: '/Summarization',
             element: <Summarization/>
+        },
+        {
+            path: '/account',
+            element: <Account/>
+        },
+        {
+            path: '/quizzes',
+            element: <ShowQuizPage/>
+        },
+        {
+            path: '/questions',
+            element: <Questions/>
+        },
+        {
+            path: '/report',
+            element: <ShowReport/>
         }
     ]
   }

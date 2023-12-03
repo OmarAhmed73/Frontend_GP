@@ -17,7 +17,7 @@ const ShowLessonsTeacher = () => {
         <LessonCardTeacher/>
         <LessonCardTeacher/>
         <LessonCardTeacher/>
-      <LessonCardTeacher />
+        <LessonCardTeacher/>
       
         </div>
     </div>
